@@ -1,6 +1,6 @@
 import pandas as pd
 
-triplet_df = pd.read_csv("../data/processed/yelp_triplet_matches.csv")
+triplet_df = pd.read_csv("../data/processed/yelp_triplet_matches_with_gaps.csv")
 
 ground_truth = triplet_df[['place_id', 'name', 'address']].drop_duplicates()
 

@@ -13,7 +13,7 @@ import numpy as np
 from rapidfuzz import fuzz
 from pathlib import Path
 
-TRIPLET = "../data/processed/yelp_triplet_matches.csv"
+TRIPLET = "../data/processed/yelp_triplet_matches_with_gaps.csv"
 GROUND_TRUTH = "../data/processed/yelp_ground_truth.csv"
 OUT_DIR = Path("../data/processed")
 OUT_DIR.mkdir(parents=True, exist_ok=True)

@@ -100,19 +100,17 @@ def normalize_overpass_geojson(input_file: str, output_file: str):
 if __name__ == "__main__":
     # List of all 15 Overpass city files
     overpass_files = [
-        '../data/raw/overpass_boise.geojson',
-        '../data/raw/overpass_edmonton.geojson',
-        '../data/raw/overpass_indianapolis.geojson',
-        '../data/raw/overpass_las_vegas.geojson',
-        '../data/raw/overpass_madison.geojson',
-        '../data/raw/overpass_nashville.geojson',
-        '../data/raw/overpass_neworleans.geojson',
-        '../data/raw/overpass_philadelphia.geojson',
-        '../data/raw/overpass_pittsburgh.geojson',
+        '../data/raw/overpass_boise_full.geojson',
+        '../data/raw/overpass_edmonton_full.geojson',
+        '../data/raw/overpass_indianapolis_full.geojson',
+        '../data/raw/overpass_nashville_full.geojson',
+        '../data/raw/overpass_neworleans_full.geojson',
+        '../data/raw/overpass_philadelphia_full.geojson',
+        '../data/raw/overpass_pittsburgh_full.geojson',
 #        '../data/raw/overpass_santabarbara.geojson',
-        '../data/raw/overpass_stlouis.geojson',
-        '../data/raw/overpass_tampa.geojson',
-        '../data/raw/overpass_tucson.geojson'
+        '../data/raw/overpass_stlouis_full.geojson',
+        '../data/raw/overpass_tampa_full.geojson',
+        '../data/raw/overpass_tucson_full.geojson'
     ]
 
     output_dir = Path('../data/interim')
