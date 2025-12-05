@@ -14,6 +14,11 @@ from sklearn.metrics import classification_report, accuracy_score
 import joblib
 import numpy as np
 
+trip = pd.read_csv("../data/processed/yelp_triplet_matches_with_gaps.csv", dtype=str)
+gt = pd.read_csv("../data/processed/yelp_ground_truth.csv", dtype=str)
+print(trip[['name','omf_name','overpass_name']].head())
+print(gt.head())
+
 TRAIN_FILE = "../data/processed/ML_TRAIN_FEATURES_name.csv"
 MODEL_DIR = Path("../models")
 MODEL_DIR.mkdir(parents=True, exist_ok=True)

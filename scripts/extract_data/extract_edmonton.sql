@@ -12,6 +12,8 @@ COPY (
       names.primary AS name,
       categories.primary AS category,
       addresses[1].freeform AS address,
+      'Edmonton' AS city,   -- force city
+
       ARRAY_TO_STRING(phones, '|') AS phones,
       ARRAY_TO_STRING(websites, '|') AS websites,
       ARRAY_TO_STRING(emails, '|') AS emails,
